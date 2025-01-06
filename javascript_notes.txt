@@ -1,0 +1,31 @@
+types of data types:-
+**************
+1.Primitive data types:
+-they are built in
+-immutable
+-they can store only
+    -String
+    -Number
+    -boolean
+    -undefined
+    -null
+    -symbol
+    -bigint
+
+2.Non-Primitive data types:-
+-they are user defined
+-mutable
+-they can store multiple values.
+      -array
+      -functions
+      -objects
+      -math,date,json
+    
+
+Strings:-
+************
+-sequence of characters enclosed within "",'', `` (template literals/back ticks)
+
+Number:-
+**********
+- -2^53-1 to +2^53-1 upto this range we consider as number data type.
