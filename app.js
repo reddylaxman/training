@@ -45,3 +45,40 @@ console.log(typeof n);
 
 console.log(2n, typeof 2n);
 //output: 2n 'bigint'
+
+const mySymbol = Symbol();
+const uniqueSymbol = Symbol("description");
+console.log(mySymbol);
+console.log(uniqueSymbol);
+
+const person = {
+  name: "Laxman Reddy",
+  age: 21,
+};
+
+console.log(person);
+//output: {name: 'Laxman Reddy', age: 21}
+console.log(typeof person);
+//output: object
+
+const colors = ["black", "blue", "red"];
+
+console.log(colors);
+//output:['black', 'blue', 'red']
+console.log(typeof colors);
+//output:object
+
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+console.log(greet("Laxman Reddy"));
+//output: Hello, Laxman Reddy!
+console.log(typeof greet);
+//output:function
+
+const today = new Date();
+console.log(today);
+//output: Mon Jan 06 2025 18:37:34 GMT+0530 (India Standard Time)
+
+console.log(typeof today);
+//output:object

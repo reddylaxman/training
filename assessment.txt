@@ -1,2 +1,153 @@
 Give me some idea on what is a Data type. What are Primitive Data types and Non-Primitive Data types. Explain with some examples.
+ ****************************************
+ Data type:-
+ -The data types that are derived from the primitive data types of the JavaScript language are known as non-primitive data types.
+- A data type defines the type of data a variable can hold in javascript.
+- Each data type requires different amounts of memory and has some specific operations which can be performed over it. 
+- using  the typeof(), we can return the data type of identifier.
+-The data types in JavaScript can be mainly categorized into two types.
+                       -Primitive Data Types
+                       -Non-Primitive Data Types
 
+Primitive Data Type:-
+- Primitive data types are built-in data types in javascript.
+- Primitive data types are immutable, meant that once the  values are assigned/initialized cannot be changed after they are created
+-javascript primitive data types:-
+    1.String
+    2.Number
+    3.Boolean
+    4.Undefined
+    5.null
+    6.symbol
+    7.bigint
+
+
+1.String:-
+-String is sequence of characters enclosed within "" , '' , ``(template literals/backticks)
+Example:
+let str1 = "double quotes";
+console.log(str1, typeof str1);
+//output: double quotes string
+let str2 = "single quotes";
+console.log(str2, typeof str2);
+//output: single quotes string
+let str3 = `template literals`;
+console.log(str3, typeof str3);
+//output: template literals string
+
+2.Number:-
+-Numbers are always stored in double-precision 64-bit binary format IEEE 754. In JavaScript, there are no separate types of integers and floating point.
+Example:
+let num1 = 133;
+console.log(num1, typeof num1);
+//output: 133 'number'
+let num2 = 133.133;
+console.log(num2, typeof num2);
+//output: 133.133 'number'
+
+3.Boolean:-
+-Boolean can have one of two values. It may be either true or false.
+-Logical operations return result as  boolean values.
+-These are mainly result in conditional statements like if,if-else,nested-if,nested-if-else etc.
+Example:-
+let bool1 = true;
+console.log(bool1, typeof bool1);
+//output: true 'boolean'
+let bool2 = false;
+console.log(bool2, typeof bool2);
+//output: false 'boolean'
+
+4.Undefined:-
+-A variable that has not been assigned a value is of type undefined.
+Example:
+let undefine;
+console.log(undefine);
+//output: undefined
+
+5.Null:-
+-null is a special value that represents an empty or unknown value.
+-For example:
+let n = null;
+console.log(n);
+//output : null
+
+6.Symbol:
+-Symbols are unique and immutable, so they can be used as unique identifiers in objects and classes.
+-Example:
+
+const mySymbol = Symbol();
+const uniqueSymbol = Symbol('description');
+console.log(mySymbol);
+console.log(uniqueSymbol);
+//output: Symbol()
+//output: Symbol(description)
+
+7.BigInt:-
+-BigInt is used to perform the mathematical operations on numbers outside the range allowed by number.
+-To create a bigint, append the "n" to end of a number.
+Example:-
+
+console.log(2n, typeof 2n);
+//output: 2n 'bigint'
+
+Non-primitive Data Types:-
+-user-defined data types or reference data types, these data types are created by users.
+-They can store multiple values and are used to create and manipulate objects. 
+-Non-primitive data types store a memory address of the variable instead of the value directly in memory.
+-They are mutable, since they can easily modified.
+-Example:
+    1.object
+    2.array
+    3.function
+    4.date
+
+
+1.object:-
+-A complex data type that can store multiple data collections.
+-It is like a container that can hold key-value pairs,
+making it suitable for complex data structures.
+Example:
+
+const person = {
+  name: "Laxman Reddy",
+  age: 21,
+};
+
+console.log(person);
+//output: {name: 'Laxman Reddy', age: 21}
+console.log(typeof person);
+//output: object
+
+2.Array:-
+-Array data type is a specialized form of an object used to store the ordered list of values.
+-It can store elements of different data types and accessed by indices.
+Example:
+const colors = ["black", "blue", "red"];
+
+console.log(colors);
+//output:['black', 'blue', 'red']
+console.log(typeof colors);
+//output:object
+
+3.Functions:-
+-Functions are also objects. They can be assigned to variables,passed as arguments, or returned from other functions.
+Example:
+
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+console.log(greet("Laxman Reddy"));
+//output: Hello, Laxman Reddy!
+console.log(typeof greet);
+//output:function
+
+4.Date:-
+-Date data type represents dates and times .
+Example:
+
+const today = new Date();
+console.log(today);
+//output: Mon Jan 06 2025 18:37:34 GMT+0530 (India Standard Time)
+
+console.log(typeof today);
+//output:object
