@@ -43,8 +43,3 @@ for (let i = 1; i <= 5; i++) {
   if (i == 3) continue;
   console.log(i);
 }
-
-//! function
-function addToCart() {
-  alert("Product is added to cart");
-}
