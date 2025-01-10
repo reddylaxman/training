@@ -138,6 +138,7 @@ Decision making statments:-
 
 prompt():- this method is used to collect the data from the users.
 
+
 looping statements:-
 ********************
 - to execute the block of codes repeatedly.
@@ -171,5 +172,39 @@ permenently
 continue-when the condition satisfies it will skip that particular
 condition.
 
+
 functions:-
 ************
+- function is a block of code used to execute specific task assigned to it.
+- function is a non-primitive data type.
+- functions can be reusable.
+
+syntax :-    function function_name(optional parameters){// function decalration
+                    //statements
+                    }
+                function_name(arguments);
+
+Note:-
+-current version of the javascript is es14.
+-es6- is stable version.
+es - ECMA script
+ECMA = European Computer Manufacturing association
+
+
+Types of functions:-
+1.named function :- function which is having a name and invoked with the same name.
+2.anonymus function :-function which doesnot have  a name to declare and to invoke.
+3.function expression:- anonymus function decalration is assigned to a variable 
+    and invoked with the same variable.
+4.Immediate invoke function expression(IIFE):-
+    - once the function is created immediatley it should be invoked.
+    - it can be executed only once.
+5.Arrow function:- it is used to concise the normal function syntax.
+syntax:- ()=>{};
+-arrow function is similar to anonymous function.
+6.Higher order function:- The function which takes the functions as argument is known as Higher Order Function.
+7.Callback function:- The function which is passed as an argument to a function, then it is called as Callback function.
+
+-closure: closure is a memory where function are bundled together/functions are nested each other.
+Bu giving accessability to the inner most function to access the variables of the outer most function.
+

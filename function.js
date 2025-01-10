@@ -74,3 +74,85 @@ let ar6 = (_) => {
   console.log("Bye");
 };
 ar6();
+
+//! return
+
+function returnDemo(a, b) {
+  a + b;
+}
+
+console.log("function without return: " + returnDemo(5, 5));
+
+function returnDemo2(a, b) {
+  return a + b; // ! explicit return
+}
+
+console.log("function return  with console.log: " + returnDemo2(5, 5));
+
+let y = (a, b) => a + b; //! implicit return
+console.log("Implicit return: " + y(10, 20));
+
+let z = (a, b) => {
+  return a + b;
+}; //! implicit return
+console.log("Explicit return: " + z(10, 20));
+
+function demo2() {
+  console.log("Above the return keyword");
+  return "Return Statement";
+  console.log("Below the return statement");
+}
+
+console.log(demo2());
+
+console.log("Higher order function:");
+// !Higher order function
+function hof(a) {
+  return a;
+}
+// console.log(hof(10));
+// console.log(hof("Laxman"));
+// console.log(hof([1, 2, 3, 4, 5, 6]));
+
+console.log(
+  hof(function () {
+    return "I am a callback funtion";
+  })
+);
+
+function hof2(callback) {
+  return callback;
+}
+
+function callback(a, b) {
+  return a + b;
+}
+console.log(hof2(callback(5, 5)));
+
+//! closure
+
+// let t = 5;
+// let s = "Hi";
+// function c() {
+//   var user = "Laxman";
+//   let company = "Google";
+//   const sal = 1000000;
+//   console.log(user);
+//   console.log(company);
+//   console.log(sal);
+//   console.log(t, s);
+// }
+// c();
+
+let t = 5;
+let s = "Hi";
+function c() {
+  var user = "Laxman";
+  let company = "Google";
+  const sal = 1000000;
+  console.log(user);
+  console.log(company);
+  console.log(sal);
+  console.log(t, s);
+}
+c();
