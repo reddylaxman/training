@@ -156,3 +156,23 @@ function c() {
   console.log(t, s);
 }
 c();
+
+function c1() {
+  let a = 10;
+  let b = 20;
+  console.log(a, b);
+  function c2() {
+    let p = "React";
+    let q = "Node js";
+    console.log(p, q);
+
+    function c3() {
+      console.log(a);
+      console.log(p);
+    }
+    c3();
+  }
+  c2();
+}
+
+c1();
