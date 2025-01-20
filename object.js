@@ -6,8 +6,26 @@ const userDetails = {
     area: "Moosapet",
     hno: "12-16-53",
   },
+  details: function () {
+    return `My name is ${name}.`;
+  },
 };
-console.log(userDetails);
+console.log(userDetails.details);
+console.log(userDetails.details());
+const userDetails2 = {
+  name: "Laxman Reddy",
+  rollno: "2211cs010133",
+  group: "G-3",
+  address: {
+    area: "Moosapet",
+    hno: "12-16-53",
+  },
+  details: function () {
+    return `My name is ${this.name}.`;
+  },
+};
+console.log(userDetails2.details);
+console.log(userDetails2.details());
 
 function printDetails() {
   document.writeln("Name: " + userDetails.name);
@@ -46,3 +64,17 @@ function fetchUsers() {
 }
 
 fetchUsers();
+
+let userObject = {
+  name: "Laxman Reddy",
+  rollno: "2211cs010133",
+  age: 21,
+};
+
+console.log(userObject);
+
+let x = JSON.stringify(userObject);
+console.log("Json Object " + x);
+
+let y = JSON.parse(x);
+console.log(y);

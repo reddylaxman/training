@@ -265,7 +265,7 @@ syntax :-  {
 
 
 - for json no need to store it inside variable
-- both keys and values shoyuld be double quoted only except number.
+- both keys and values should be double quoted only except number.
 
 ex:- {
     "name":"Sam",
@@ -274,4 +274,9 @@ ex:- {
 
 extension for json file is ".json"
 
+
 -json is used as interface b/w the frontend and backend
+
+methods of json:-
+1.JSON.stringfy() :- It is used to convert the javascript object into JSON object.
+1.JSON.parse() :- It is used to convert the JSON object into javascript object.
