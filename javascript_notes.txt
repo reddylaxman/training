@@ -243,40 +243,52 @@ methods in array:-
 push() , pop() , unshift() , shift() , reverse() , join()
 concat()
 
-what is object ?
-- object is an entity which is used to store the values in the form of key &value pairs.
-- Object is a physical entity which is having states(properties) and behaviours(method).
+what is object?
+- Object is an entity which is having states(proeprties) and behviours.
+- Object is used to store the data in the form key & value pairs.
 
-syntax :-  let obj = {};
+syntax :-   let obj = {};
 
-notes: - Object based language  + OOPs
-
-ex:-    let obj ={
-                name:"Sam",
-                age:25
-                }
-
-JSON :- Javascript object notation
-- IT is used to transmit the data from client to server and server to client.
-
-syntax :-  {
-                "key":"value"
-        }
+note:-  "this" - it is used to target current executing object.
 
 
-- for json no need to store it inside variable
-- both keys and values should be double quoted only except number.
+JSON :- Javascript object notation.
+- JSON is a lightweight technique of javascript used to transfer data/information from
+        client to server and vice-versa.
+        - except number it will store bot key and value pair inside the double quotes.
 
-ex:- {
-    "name":"Sam",
-    "age":25
-}
+- JSON is always in the form of "string".
 
-extension for json file is ".json"
-
-
--json is used as interface b/w the frontend and backend
 
 methods of json:-
-1.JSON.stringfy() :- It is used to convert the javascript object into JSON object.
-1.JSON.parse() :- It is used to convert the JSON object into javascript object.
+1.JSON.stringfy() :- it is used to convert Javascript object into JSON object.
+2.JSON.parse() :- it is used to convert JSON object into Javascript object.
+
+
+Asynchrnous in javascript:-
+***************************
+- to perform multiple task in javascript.
+
+1.setTimeout() :- it is a web api used to perform async operations at specified timeout.
+syntax :-  setTimeout(Callbackfn , timeout);
+
+2.setInterval():- it is a web api used to perform async operations at certain time interval.
+syntax :-  setInterval(Callbackfn , timeout);
+
+
+3.promise :- Promise is an object which represents eventual completion or failures of an async operations.
+
+    states of promise:-
+    1.pending state
+    2.fulfilled state
+    3.rejected state
+
+syntax :-  let p =  new Promise((resolve , reject)=>{});
+
+- the actual way of executing the promise is instance methods,
+        1.then() :- it is used to execute fulfilled state
+        2.catch() :- it is used to execute rejected state
+        3.finally() :- once promise is settled it will print the value.
+
+4.async & await
+note :- by default , javascript is synchronous(single threaded).
