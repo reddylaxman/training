@@ -290,5 +290,16 @@ syntax :-  let p =  new Promise((resolve , reject)=>{});
         2.catch() :- it is used to execute rejected state
         3.finally() :- once promise is settled it will print the value.
 
-4.async & await
+4.async & await:-
+
+*****************
+async: keyword is used to convert the synchronous function to asynchrnous function
+await:keyword is user to make the function to wait until the promise complete
+
 note :- by default , javascript is synchronous(single threaded).
+
+
+******************************
+DOM:-
+*****
+
