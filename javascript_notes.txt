@@ -303,3 +303,9 @@ note :- by default , javascript is synchronous(single threaded).
 DOM:-
 *****
 
+Events in DOM:-
+-Events are nothing but actions performed on html elements.
+-events are click events , mouse events, key events.
+
+Click events:- onClick, ondblclick, onsubmit, onchange
+mouse events:- 
