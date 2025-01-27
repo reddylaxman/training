@@ -47,9 +47,23 @@
     <div class="bgColor">Teal</div> -->
 
 <form>
+  <label for="">Username</label>
   <input type="text" placeholder="Enter username" id="username"/>
-  <input type="email" placeholder="Enter email" id="email"/>
+  
+  <label for="">Password</label>
   <input type="password" placeholder="Enter password" id="pwd"/>
+  
+  <div id="gender">
+    <label for="">Gender</label>
+  <input type="radio" id="male" name="gender"  value="male"/>
+  <label for="">Male</label>
+  <input type="radio"  id="female"  name="gender" value="female"/>
+  <label for="">Female</label>
+  <input type="radio"  id="other"  name="gender" value="other"/>
+  <label for="">Other</label>
+
+</div>
+  
   <input type="submit"/>
 </form>
     <script src="dom.js"></script>

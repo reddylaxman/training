@@ -84,22 +84,81 @@
 
 // document.body.appendChild(image);
 
+// let form = document.querySelector("form");
+// let username = document.getElementById("username");
+// let email = document.getElementById("email");
+// let pwd = document.getElementById("pwd");
+
+// form.addEventListener("submit", (event) => {
+//   event.preventDefault();
+//   let v1 = username.value;
+//   let v2 = email.value;
+//   let v3 = pwd.value;
+//   let userDetails = {
+//     v1,
+//     v2,
+//     v3,
+//   };
+//   console.log(userDetails);
+//   localStorage.clear();
+//   localStorage.setItem("User Data", JSON.stringify(userDetails));
+// });
+
+// let video = document.createElement("video");
+// video.src = "../video.mp4";
+// video.controls = true;
+// console.log(video);
+
+// document.body.appendChild(video);
+
+// let mainEle = document.createElement("div");
+// mainEle.setAttribute("id", "mainBlock");
+// mainEle.style.border = "1px solid red";
+
+// console.log(mainEle);
+
+// let topEle = document.createElement("div");
+// topEle.setAttribute("class", "topBlock");
+// // console.log(topEle);
+
+// let image = document.createElement("img");
+// image.src =
+//   "https://create.microsoft.com/_next/image?url=https%3A%2F%2Fcdn.create.microsoft.com%2Fimages%2Fimage-creator-T03_cat.webp&w=1920&q=90";
+// image.style.width = "300px";
+// image.style.height = "300px";
+// topEle.appendChild(image);
+// let bottomEle = document.createElement("div");
+// bottomEle.setAttribute("id", "bottomBlock");
+// // console.log(bottomEle);
+
+// let h1 = document.createElement("h1");
+// h1.innerText = "Cat";
+// bottomEle.appendChild(h1);
+
+// let btn = document.createElement("button");
+// btn.innerText = "View more";
+// btn.style.backgroundColor = "#55f12f";
+// btn.style.borderRadius = "20px";
+// bottomEle.appendChild(btn);
+
+// mainEle.appendChild(topEle);
+
+// mainEle.appendChild(bottomEle);
+
+// document.body.appendChild(mainEle);
+
 let form = document.querySelector("form");
-let username = document.getElementById("username");
-let email = document.getElementById("email");
+
+let uname = document.getElementById("username");
 let pwd = document.getElementById("pwd");
 
-form.addEventListener("submit", (event) => {
-  event.preventDefault();
-  let v1 = username.value;
-  let v2 = email.value;
-  let v3 = pwd.value;
-  let userDetails = {
-    v1,
-    v2,
-    v3,
-  };
-  console.log(userDetails);
-  localStorage.clear();
-  localStorage.setItem("User Data", JSON.stringify(userDetails));
+let gender = document.getElementsByName("gender");
+// console.log(gender);
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let un = username.value;
+  let up = pwd.value;
+  let g = gender.value;
+  console.log(un, up, g);
 });
