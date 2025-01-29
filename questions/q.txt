@@ -1,0 +1,3 @@
+1.Take a array of employee object where each object contains properties such as empId,empName,empCompany,empSalary,
+empAddress where empAddress further having two more properties of object such as empCity adn empArea
+print these properties in the form of the table on the ui using javascript.
