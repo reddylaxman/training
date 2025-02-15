@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-container">
+        <img class="logo-img" src="./burger.png"/>
+        <p class="logo">Burger House</p>
+    </div>
+        <ul class="nav-list">
+        <li class="nav-items"><a href="#home">Home</a></li>
+        <li class="nav-items"><a href="menu">Menu</a></li>
+        <li class="nav-items"><a href="our-story">Our story</a></li>
+        <li class="nav-items"><a href="contact-us">Contact us</a></li>
+    </ul>
+    </nav>
+    <div class="container-1">
+        <div class="burger-text"><p>IT IS GOOD TIME FOR THE GREAT TASTE OF BURGERS</p>
+        <h1>BURGER</h1>
+    <h2>WEEK</h2></div>
+        <img src="./burger-coke.jpg" class="img"/>
+    </div>
+    <div class="container-2">
+        <div class="column">
+        <img src="./img-3.jpg" class="img3"/>
+</div>
+        <div class="column">
+        <img src="./img-1.jpg" class="img1"/>
+        <img src="./img-2.webp" class="img2"/>
+        
+    </div>
+    </div>
+    <div class="text-container">
+        
+        <button class="btn">Order Now</button>
+        <h1 >Choose & Enjoy</h1>
+        <p class="text">Enjoy the best burgers in town, made with fresh ingredients and crafted with love.</p>
+    </div>
+    <div class="order-container">
+        <div class="card">
+            <img src="https://pngfile.net/public/uploads/preview/veg-burger-png-image-11703408255gkuhjrek36.png" alt="Image 1">
+            <button onclick="onOrder()">Order</button>
+        </div>
+        <div class="card">
+            <img src="https://png.pngtree.com/png-clipart/20241025/original/pngtree-crispy-chicken-burger-with-french-fries-png-image_16498071.png" alt="Image 2">
+            <button onclick="onOrder()">Order</button>
+        </div>
+        <div class="card">
+            <img src="https://img.pikbest.com/png-images/20240929/ultimate-chicken-burger-crispy-cheddar-and-fresh-lettuce-in-every-bite-21_10908073.png!sw800" alt="Image 3" class="img-bg">
+            <button onclick="onOrder()">Order</button>
+        </div>
+    </div>
+    <div class="booking-container">
+        <h2>Book Your Table</h2>
+        <form onsubmit="onTableBook()">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="date" required>
+
+          
+
+            <label for="people">Number of People</label>
+            <select id="people" name="people" required>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7">7 People</option>
+                <option value="8">8 People</option>
+            </select>
+
+            <button type="submit">Book Table</button>
+        </form>
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
